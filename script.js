@@ -1,3 +1,14 @@
+// Toujours démarrer le portfolio en haut de la page
+if (window.location.hash) {
+    history.replaceState(null, '', window.location.pathname);
+}
+
+window.scrollTo(0, 0);
+
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+});
+
 const menuBtn = document.querySelector('.menu-btn');
 const nav = document.querySelector('#main-nav');
 
