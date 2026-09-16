@@ -27,7 +27,7 @@ h1 em,h2 em{font-style:normal;color:#8b95a5}
 .quick-facts div{display:flex;flex-direction:column;gap:2px}
 .quick-facts strong{font-family:"Space Grotesk";font-size:20px}
 .quick-facts span{font-size:10px;color:var(--muted);max-width:130px}
-.hero-photo-wrap{position:relative;max-width:280px;justify-self:end}
+.hero-photo-wrap{position:relative;max-width:330px;justify-self:start;margin-left:40px;transform:rotate(0deg);}
 .photo-card{padding:9px;background:#fff;border:1px solid var(--line);box-shadow:0 25px 70px rgba(11,18,32,.13);transform:rotate(1deg)}
 .photo-card img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top}
 .photo-tag{position:absolute;left:24px;bottom:23px;background:rgba(11,18,32,.9);color:#fff;padding:10px 13px;border-radius:7px;font-size:11px;font-weight:700}
