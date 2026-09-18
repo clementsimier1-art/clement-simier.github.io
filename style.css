@@ -47,3 +47,93 @@ footer{display:flex;justify-content:space-between;padding:25px 9vw;font-size:10p
 
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
 .reveal.visible{opacity:1;transform:none}
+/* ================================
+   CORRECTION BLOC PHOTO
+   ================================ */
+
+.hero-photo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* Photo */
+.photo-card {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+/* Image */
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Badge sur la photo */
+.photo-tag {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  z-index: 2;
+
+  padding: 9px 14px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.92);
+  color: #111;
+
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Carte France → Suisse */
+.location-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  max-width: 360px;
+  box-sizing: border-box;
+
+  padding: 14px 18px;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Icône localisation */
+.location-card > span {
+  flex-shrink: 0;
+  font-size: 24px;
+}
+
+/* Texte localisation */
+.location-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.location-card strong {
+  font-size: 14px;
+}
+
+.location-card small {
+  font-size: 12px;
+  opacity: 0.7;
+}
